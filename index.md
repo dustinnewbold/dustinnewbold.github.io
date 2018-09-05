@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<title>
-		Dustin Newbold
-	</title>
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<meta name="google-site-verification" content="3pKOGyOAk-cyITfeDwqYb1zDSuYYa9RzPM_5G0ImklQ" />
-</head>
-<body>
+layout: home
+---
 
 <section class="hello">
 	<span>
@@ -18,7 +12,7 @@
 </section>
 
 <section class="about">
-	<img src="img/me.png" title="It's Me!" alt="Dustin Newbold" />
+	<img src="{{ "assets/img/me.png" | relative_url }}" title="It's Me!" alt="Dustin Newbold" />
 
 	<div class="titles">
 		<h1>
@@ -34,16 +28,16 @@
 	<div class="logos">
 		<ul>
 			<li>
-				<img src="img/angularjs.png" title="Angular JS" />
+				<img src="{{ "assets/img/angularjs.png" | relative_url }}" title="Angular JS" />
 			</li>
 			<li>
-				<img src="img/es6.png" title="ECMAScript 6" />
+				<img src="{{ "assets/img/es6.png" | relative_url }}" title="ECMAScript 6" />
 			</li>
 			<li>
-				<img src="img/html5.png" title="HTML5" />
+				<img src="{{ "assets/img/html5.png" | relative_url }}" title="HTML5" />
 			</li>
 			<li>
-				<img src="img/css3.png" title="CSS3" />
+				<img src="{{ "assets/img/css3.png" | relative_url }}" title="CSS3" />
 			</li>
 		</ul>
 	</div>
@@ -58,13 +52,10 @@
 
 
 	<a href="https://github.com/dustinnewbold?tab=repositories" class="github">
-		<img src="img/github.png" />
+		<img src="{{ "assets/img/github.png" | relative_url }}" />
 		<span>
 			/dustinnewbold
 		</span>
 		<div class="clear"></div>
 	</a>
 </section>
-
-</body>
-</html>
