@@ -18,6 +18,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#157878">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="icon" type="image/png" href="/assets/img/favicon.png">
 		<link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
 	</head>
 	<body>
@@ -39,5 +41,17 @@
 				
 			</footer>
 		</main>
+
+		<script>
+			if ( 'serviceWorker' in navigator ) {
+				navigator.serviceWorker.register('/sw.js')
+					.then(function(registration) {
+						console.log('registered!', registration);
+					})
+					.catch(function(error) {
+						console.log('error!', error);
+					});
+			}
+		</script>
 	</body>
 </html>
